@@ -1,0 +1,416 @@
+@font-face {
+    font-family: "Aventurine.ttf";
+    src: url('../fonts/Aventurine.ttf') format("truetype");
+}
+
+body, html, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color:green ;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10%;
+    max-width: 80rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu--horizontal {
+    display: flex;
+}
+
+.services-menu {
+    display: flex;
+}
+
+.menu-between {
+    justify-content: space-between;
+}
+
+.menu-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.width-s {
+    max-width: 12rem;
+}
+
+.width-l {
+    max-width: 26rem;
+}
+
+.width-xl {
+    max-width: 36rem;
+}
+
+.width-xl-static {
+    width: 36rem;
+}
+
+.pt-sans {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.xxxs-size {
+    font-size: 0.6rem;
+}
+
+.xxs-size {
+    font-size: 0.8rem;
+}
+
+.xs-size {
+    font-size: 1rem;
+}
+
+.s-size {
+    font-size: 1.2rem;
+}
+
+.m-size {
+    font-size: 1.4rem;
+}
+
+.l-size {
+    font-size: 1.6rem;
+}
+
+.title-s {
+    font-size: 2.8rem;
+}
+
+.title-m {
+    font-size: 3.2rem;
+}
+
+.title-l {
+    font-size: 3.6rem;
+}
+
+.title-xl {
+    font-size: 4.2rem;
+}
+
+.title-xxl {
+    font-size: 4.8rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.header {
+    background: url('../images/juge.jpg') no-repeat center top /cover;
+}
+
+.header-top {
+    background: #149414;
+   
+    background: #fbfeffd9;
+}
+
+.header-menu {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header-item {
+    position: relative;
+}
+
+.toggle-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header-item:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    display: none;
+    width: 100%;
+    height: 7px;
+    background: #0a7b2a;
+}
+
+.header-item:hover:after {
+    display: block;
+}
+
+.header-item:hover a {
+    color: #0a7b2a;
+}
+
+.header-content {
+    margin: 5rem 0 0 0;
+}
+
+.header-title-main {
+    line-height: 1.4;
+    color:#FF7F00;
+    text-transform: uppercase;
+}
+
+.header-upper-title {
+    color: #FF7F00;
+    letter-spacing: 0.45rem;
+}
+
+.header-title--content {
+    border-top: 2px solid #FF5E4D;
+    border-bottom: 2px solid #FF5E4D;
+    padding: 1.2rem 0;
+}
+
+.header-subtitle {
+    margin: 2rem 0 5rem 0;
+    line-height: 1.2;
+    font-family: "Aventurine.ttf", Verdana, Tahoma;
+}
+
+.header-services {
+    margin: 0 0.2rem 0 0;
+    padding: 3rem;
+    width: 50%;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.service-link {
+    position: relative;
+    margin: 6rem 0 0 0;
+}
+
+.service-link:after {
+    content: '';
+    position: absolute;
+    left: 70%;
+    bottom: 2rem;
+    width: 30%;
+    height: 1px;
+    background: b#FF5E4D;
+}
+
+.link--right:after {
+    left: 0;
+}
+
+.service-first {
+    background: #1FA055 url('../images/0.jpeg') no-repeat bottom left;
+}
+
+.service-second {
+    background: #FF7F00 url('../images/11.jpg') no-repeat bottom right;
+}
+
+.title-upper {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.advantage-item {
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.advantage-title {
+    padding: 0 2rem;
+    max-width: 12rem;
+}
+
+.advantage-content {
+    width: 100%;
+}
+
+.more {
+    border-top: 1px solid #FF5E4D;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.more:hover {
+    color: #6600FF;
+}
+
+.excellence {
+    background: url('../images/metier.jpg') no-repeat center top /cover;
+    padding: 5rem 0;
+}
+
+.excellence-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.excellence-item {
+    display: flex;
+    align-items: center;
+    width: 26rem;
+    text-transform: uppercase;
+}
+
+.excellence-text {
+    padding: 4rem 1rem;
+}
+
+.customers-container {
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+}
+
+.customers-item {
+    padding: 2rem;
+    flex: 0 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #FF7F00;
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+footer {
+    margin-top: 200px;
+    background-color: #1FA055;
+}
+
+.footer-container {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.footer-container:nth-child(1) {
+    padding: 2rem 1rem;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+.navbar-menu {
+    list-style: none;
+}
+
+.navbar-mobile {
+    display: none;
+    position: relative;
+}
+
+.navbar-list {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    left: 0;
+    background: #fafafa;
+    /* А это работает */
+    background: rgba(236, 239, 240, 0.85);
+    text-align: center;
+    list-style: none;
+}
+
+.navbar-item {
+    margin: 1rem 0;
+
+}
+
+.navbar-menu a {
+    font-weight: 700;
+    color: #DFF2FF;
+    line-height: 2;
+}
+
+.navbar-inner a {
+    font-weight: 100;
+}
+
+.navbar-inner {
+    margin: 0 0 0 1rem;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.footer-title-main {
+    color: white;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.footer-button {
+    margin: 1rem 0;
+    color: white;
+    font-weight: 700;
+    background: #39322f;
+    border: 1px solid #000000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    border-radius: 7px;
+    line-height: 3;
+    cursor: pointer;
+}
+
+.footer-info {
+    color: #000000;
+}
